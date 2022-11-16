@@ -8,7 +8,9 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
+.header {display:flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -16,7 +18,6 @@ body {
 }
 
 .header h1 {
-    display: inline-block;
     font-size: 48px;
 }
 
@@ -24,22 +25,28 @@ body {
     color: #d9dcd6;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+.header nav{
+    width: 75%;
+    display: flex;
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-.header div ul {
+.header nav ul {
+    justify-content: space-around;
+    width: 100%;
     list-style-type: none;
+    display: flex;
 }
 
 .header div ul li {
-    display: inline-block;
+    
     margin-left: 25px;
 }
+
+nav{text-align: right;
+list-style: none;}
 
 a {
     color: #ffffff;
@@ -49,7 +56,7 @@ a {
 p {
     font-size: 16px;
 }
-
+/* primary image */
 .hero {
     height: 800px;
     width: 100%;
